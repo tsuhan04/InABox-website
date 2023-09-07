@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+    crossorigin="anonymous">
+    <!-- Font CDn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+    crossorigin="anonymous"></script>
+  </head>
+
+  <style>
+    .dropdown:hover > .dropdown-menu .dropend:hover > .dropdown-menu{
+        display: block;
+        margin-top: .125em;
+        margin-left: .125em;
+    }
+
+    @media screen and (min-width:769px){
+        .dropend:hover > .dropdown-menu {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            
+        }    
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+    body{
+        min-height: 100%;
+        width: 100%;
+        background-color: #eeebe3;
+    }
+    .container{
+        margin-top: 5px;
+        margin-bottom: 50px;
+        width: 50%;
+        background-color: #fff;
+        border-radius: 6px;
+        padding: 20px 60px 40px 40px;
+        box-shadow: 0 5px 10px rgb(0, 0, 0.2);
+    }
+    .container .content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container .content .left-side {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        position: relative;
+    }
+    .content .left-side::before{
+        content: '';
+        position: absolute;
+        height: 70%;
+        width: 2px;
+        right: -15px;
+        top: 50%;
+        transform: translateY(-50% );
+        background-color: #afafb6;
+    }
+    .content .left-side .details {
+        margin: 14px;
+        text-align: center;
+    }
+    .content .left-side .details i{
+        font-size: 30px;
+        counter-reset: #3e2093;
+        margin-bottom: 10px ;
+    }
+    .content .left-side .details .topic{
+        
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .content .left-side .details .text-one,
+    .content .left-side .details .text-two{
+        font-size: 14px;
+        color: #afafb6  ;
+    }
+    .container .content .right-side {
+        width: 75%;
+        margin-left: 75px;
+    }
+    .container .right-side .topic-text{
+        font-size: 23px;
+        font-weight: 600;
+        color: #3e2093;
+    }
+    .right-side  .input-box{
+        height: 50px;
+        width: 100%;
+        margin: 12px 0;
+    }
+
+    .right-side .input-box input,
+    .right-side .input-box textarea{
+        height: 100%;
+        width: 100%;
+        border: none;
+        font-size: 16px;
+        background-color: #F0F1F8;
+        border-radius: 6px;
+        padding: 0 15px;
+        resize: none;
+    }
+    .right-side .message-box {
+        min-height: 110px;
+    }
+    .right-side .button{
+        display: inline-block;
+        margin-top: 6px;
+        
+    }
+    .right-side .button input[type="button"]{
+        color: #fff;
+        font-size: 18px;
+        outline: none;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 6px;
+        background: #3e2093;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .button input[type="button"]:hover{
+        background: #5029bc;
+    }
+    @media (max-width: 950px){
+        .container{
+            width: 90%;
+            padding: 30px 35 px 40px 35px;
+        }
+    }
+    @media (max-width: 820px){
+        .container{
+            margin: 40px 0;
+            height: 100%;
+        }
+        .container .content{
+            flex-direction: column-reverse;
+        }
+        .container .content .left-side{
+            width: 100%;
+            flex-direction: row;
+            margin-top: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .container .content .left-side::before{
+            display: none;
+        }
+        .container .content .right-side{
+            width: 100%;
+            margin-left: 0;
+        }
+        .right-side .button input[type="button"]{
+            text-align: center;
+        }
+    }
+
+  </style>
+
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">In A Box</a>
+          <button class="navbar-toggler" type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false">
+                  Service and products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="recipe.html">Recipes Guides</a></li>
+                  <li><a class="dropdown-item" href="homeset.html">Bake at Home set</a></li>
+                  <li><a class="dropdown-item" href="ingredient.html">Ingredientss (dry/preserved)</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li class="nav-item dropend">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" 
+                    aria-expanded="false">
+                      Other Items
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="meal.html">Meal planner</a></li>
+                      <li><a class="dropdown-item" href="nutritional.html">Nutritional information App</a></li>
+                      <li><a class="dropdown-item" href="weeklyRecipe.html">Weekly Recipes Selection</a></li>
+                      <li><a class="dropdown-item" href="giftBox.html">Gift Boxs</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="package.html">Packages</a>
+              </li>
+            </ul>
+
+
+            <span class="navbar-text">
+                <i class="fa-regular fa-user fa-lg" style="color: #3e2093;"></i>
+                <a
+                class="btn btn-outline-dark logInBtn me-2"
+                type="button"
+                href="LogIn.html"
+                style="color: #3e2093;">Login</a>
+                <a
+                class="btn btn-outline-dark logInBtn"
+                type="button"
+                href="signUp.html"
+                style="color: #3e2093;">Sign up</a>
+            </span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contact Us -->
+    <br>
+    <div class="header text-center">
+      <h1 style="color: #3e2093;">Contact Us</h1>
+    </div>
+    <br>
+
+    <div class="container">
+      <div class="content">
+          <div class="left-side">
+              <div class="address details">
+                   <i class="fas fa-map-marker-alt"></i>
+                   <div class="topic">Address</div>
+                   <div class="text-one">No.4, DagonStreet</div>
+                   <div class="text-two">Yangon,Myanmar</div>
+               </div>
+   
+               <div class="phone details">
+                   <i class="fas fa-phone-alt"></i>
+                   <div class="topic">Phone</div>
+                   <div class="text-one">+95979999789</div>
+               </div>
+   
+               <div class="email details">
+                   <i class="fas fa-envelope"></i>
+                   <div class="topic">Email</div>
+                   <div class="text-one">Lithan@gmail.com</div>
+                   <div class="text-two">EduClaaS.info@gmail.com</div>
+               </div>
+            </div>
+   
+            <div class="right-side">
+                <div class="topic-text">Send us a message</div>
+                <p>If you have any problem with our website or something, then send us message </p>
+             
+               <form action="#">
+                   <div class="input-box">
+                       <input type="text" placeholder="Enter your name">
+                   </div>
+                   <div class="input-box">
+                       <input type="text" placeholder="Enter your email">
+                   </div>
+                   <div class="input-box message-box">
+                       <textarea></textarea>
+                   </div>
+                   <div class="button">
+                       <input type="button" value="Send now">
+                   </div>
+               </form>
+             </div>
+         </div>
+   </div>
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="col1">
+          <i class="fa-regular fa-copyright"></i>
+          <span  class="brand"> In A Box@2023 | All Reserved</span>
+        </div>
+        <div class="col2">
+          <ul class="footer-menu">
+            <li>
+              <a href="aboutUs.html">About us</a>
+            </li>
+            <li>
+              <a href="Contactus.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col3">
+          <ul class="media-icons">
+            <div>Follow us on</div>
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook fa-lg "></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter fa-lg "></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-instagram fa-lg "></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </footer>
+
+      </div>
+
+
+    
+  </body>
+</html>

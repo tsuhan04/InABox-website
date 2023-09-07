@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Log In</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Font CDn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </head>
+
+  <style>
+    .login{
+      background: gainsboro;
+    }
+
+    .form_container{
+      margin-top: 90px;
+      margin-bottom: 90px;
+      width: 30%;
+      background-color: white;
+    }
+
+    @media screen and (max-width: 1000px) {
+      .form_container {
+        width: 45%;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      .form_container {
+        width: 65%;
+      }
+    }
+
+  </style>
+
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">In A Box</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Service and products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="recipe.html">Recipes Guides</a></li>
+                  <li><a class="dropdown-item" href="homeset.html">Bake at Home set</a></li>
+                  <li><a class="dropdown-item" href="ingredient.html">Ingredientss (dry/preserved)</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li class="nav-item dropend">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Other Items
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="meal.html">Meal planner</a></li>
+                      <li><a class="dropdown-item" href="nutritional.html">Nutritional information App</a></li>
+                      <li><a class="dropdown-item" href="weeklyRecipe.html">Weekly Recipes Selection</a></li>
+                      <li><a class="dropdown-item" href="giftBox.html">Gift Boxs</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="package.html">Packages</a>
+              </li>
+            </ul>
+
+
+            <span class="navbar-text">
+                <i class="fa-regular fa-user fa-lg" style="color: #3e2093;"></i>
+                <a
+                class="btn btn-outline-dark logInBtn me-2"
+                type="button"
+                href="LogIn.html"
+                style="color: #3e2093;">Login</a>
+                <a
+                class="btn btn-outline-dark logInBtn"
+                type="button"
+                href="signUp.html"
+                style="color: #3e2093;">Sign up</a>
+            </span>
+          </div>
+        </div>
+      </nav>
+
+
+    <!-- Body -->
+
+    <div class="login template d-flex justify-content-center align-items-center" style="background-color: #eeebe3;">
+      <div class="form_container p-5 rounded" style="background-color: #ffffff;">
+          <form>
+            <h3 class="text-center">Log In</h3>
+            <div class="mb-2">
+              <label for="email">Email</label>
+              <input type="email" placeholder="Enter Your Email" class="form-control">
+            </div>
+            <div class="mb-2">
+              <label for="password">Password</label>
+              <input type="password" placeholder="Enter Your password" class="form-control">
+            </div>
+            <div class="mb-2">
+              <input type="checkbox" class="custom-control custom-checkbox" id="check">
+              <label for="check" class="custom-input-label ms-2">Remember Me</label>
+            </div>
+            <br>
+            <div class="d-grid">
+              <button class="btn btn-primary" style="background-color: #3e2093;">Log In</button>
+            </div>
+            <br>
+            <p class="text-right">
+              Not a member? <a href="signUp.html" class="ms-2"> Sign up</a>
+            </p>
+          </form>
+      </div>
+    </div>
+
+
+
+    
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="col1">
+          <i class="fa-regular fa-copyright"></i>
+          <span  class="brand"> In A Box@2023 | All Reserved</span>
+        </div>
+        <div class="col2">
+          <ul class="footer-menu">
+            <li>
+              <a href="aboutUs.html">About us</a>
+            </li>
+            <li>
+              <a href="Contactus.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col3">
+          <ul class="media-icons">
+            <div>Follow us on</div>
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook fa-lg "></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter fa-lg "></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-instagram fa-lg "></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </footer>
+
+      </div>
+
+
+    
+  </body>
+</html>

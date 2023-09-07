@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+    crossorigin="anonymous">
+    <!-- Font CDn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+    crossorigin="anonymous"></script>
+  </head>
+
+
+  <style>
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+    }
+    .aboutus {
+        background-color: #eeebe3;
+        overflow: hidden;
+    }
+    .heading h1{
+        color: #3e2093;
+        font-size: 55px;
+        text-align: center;
+        margin-top: 35px;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 65px auto;
+    }
+    .aboutus-content {
+        flex: 1;
+        width: 600px;
+        margin: 0px 25px;
+        animation: fadeInUp 2s ease;
+    }
+    .aboutus-content h2 {
+        font-size: 38px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    .aboutus-content p{
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 40px;
+        color: #666;
+    }
+    .aboutus-img {
+        float: 1;
+        width: 600px;
+        margin: auto;
+        animation: fadeInRight 2s ease;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    @media screen and (max-width: 768px){
+        .heading h1{
+            font-size: 45px;
+            margin-top: 30px;
+        }
+        .aboutus{
+            margin: 0px;
+        }
+        .container{
+            width: 100%;
+            flex-direction: column;
+            margin: 0px;
+            padding: 0px 40px;
+        }
+        .aboutus-content{
+            width: 100%;
+            margin: 35px 0px;
+        }
+        .aboutus-content h2{
+            font-size: 30px;
+        }
+        .aboutus-content p{
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .aboutus-img{
+            width: 100%;
+        }
+    }
+    @keyframes fadeInUp {
+        0%{
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes fadeInRight {
+        0%{
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    
+</style>
+
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">In A Box</a>
+          <button class="navbar-toggler" type="button" 
+          data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" aria-expanded="false" 
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false">
+                  Service and products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="recipe.html">Recipes Guides</a></li>
+                  <li><a class="dropdown-item" href="homeset.html">Bake at Home set</a></li>
+                  <li><a class="dropdown-item" href="ingredient.html">Ingredientss (dry/preserved)</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li class="nav-item dropend">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" 
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                      Other Items
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="meal.html">Meal planner</a></li>
+                      <li><a class="dropdown-item" href="nutritional.html">Nutritional information App</a></li>
+                      <li><a class="dropdown-item" href="weeklyRecipe.html">Weekly Recipes Selection</a></li>
+                      <li><a class="dropdown-item" href="giftBox.html">Gift Boxs</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="package.html">Packages</a>
+              </li>
+            </ul>
+
+
+            <span class="navbar-text">
+                <i class="fa-regular fa-user fa-lg" style="color: #3e2093;"></i>
+                <a
+                class="btn btn-outline-dark logInBtn me-2"
+                type="button"
+                href="LogIn.html"
+                style="color: #3e2093;">Login</a>
+                <a
+                class="btn btn-outline-dark logInBtn"
+                type="button"
+                href="signUp.html"
+                style="color: #3e2093;">Sign up</a>
+            </span>
+          </div>
+        </div>
+      </nav>
+
+
+    <!-- About us -->
+
+    <section class="aboutus">
+        <div class="heading">
+            <h1>About Us</h1>
+        </div>
+        <div class="container">
+            <div class="aboutus-content">
+                <h2>Welcome to In a Box</h2>
+                <h4>"Welcome to In a Box, where culinary passion meets convenience, 
+                  and where every meal is an experience worth savoring."</h4>
+                <br>
+                <p>
+                  In a world filled with fast food and hectic schedules, 
+                  we set out on a mission to bring the joy of cooking and 
+                  the delight of delicious meals back to the heart of every home. 
+                  Our story began with a simple idea: to provide you with the tools, 
+                  ingredients, and inspiration to create extraordinary meals without 
+                  the stress and hassle of traditional meal planning and grocery shopping.
+                  <br><br>
+                  Thank you for choosing In a Box. We look forward to serving you delicious moments, 
+                  one box at a time.
+                </p>
+            </div>
+
+            <div class="aboutus-img">
+                <img src="https://shorturl.at/iBGV9"
+                 alt="About us">
+            </div>
+        </div>
+      </section>
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="col1">
+          <i class="fa-regular fa-copyright"></i>
+          <span  class="brand"> In A Box@2023 | All Reserved</span>
+        </div>
+        <div class="col2">
+          <ul class="footer-menu">
+            <li>
+              <a href="aboutUs.html">About us</a>
+            </li>
+            <li>
+              <a href="Contactus.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col3">
+          <ul class="media-icons">
+            <div>Follow us on</div>
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook fa-lg "></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter fa-lg "></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-instagram fa-lg "></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+    crossorigin="anonymous">
+    <!-- Font CDn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+    crossorigin="anonymous"></script>
+  </head>
+
+  <style>
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+    }
+    .recipe-content {
+        padding: 20px;
+    }
+  </style>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">In A Box</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+          aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false">
+                  Service and products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="recipe.html">Recipes Guides</a></li>
+                  <li><a class="dropdown-item" href="homeset.html">Bake at Home set</a></li>
+                  <li><a class="dropdown-item" href="ingredient.html">Ingredientss (dry/preserved)</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li class="nav-item dropend">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" 
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                      Other Items
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="meal.html">Meal planner</a></li>
+                      <li><a class="dropdown-item" href="nutritional.html">Nutritional information App</a></li>
+                      <li><a class="dropdown-item" href="weeklyRecipe.html">Weekly Recipes Selection</a></li>
+                      <li><a class="dropdown-item" href="giftBox.html">Gift Boxs</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="package.html">Packages</a>
+              </li>
+            </ul>
+
+            <span class="navbar-text">
+                <i class="fa-regular fa-user fa-lg" style="color: #3e2093;"></i>
+                <a
+                class="btn btn-outline-dark logInBtn me-2"
+                type="button"
+                href="LogIn.html"
+                style="color: #3e2093;">Login</a>
+                <a
+                class="btn btn-outline-dark logInBtn"
+                type="button"
+                href="signUp.html"
+                style="color: #3e2093;">Sign up</a>
+            </span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Body -->
+
+    <div style="background-color: #eeebe3;">
+      <br>
+      <h1 class="mt-3" style="text-align: center;">Recipe Detail</h1>
+      <div class="container">
+          <br>          
+  
+          <div class="row" >
+              <!-- Recipe Image -->
+              <div class="col-md-6">
+                  <img src="https://assets.kraftfoods.com/recipe_images/opendeploy/197489_640x428.jpg" 
+                  alt="Recipe Image" class="recipe-image img-fluid">
+              </div>
+  
+              <!-- Recipe Details -->
+              <div class="col-md-6 recipe-content">
+                  <h2 class="mt-3">Spaghetti & Meatballs</h2>
+                  <h5>With Marinara & Parmesan Cheese</h5>
+                  <br>
+                  <h5><b>Ingredients:</b></h5>
+                  <br>
+                  <ul>
+                      <li>1/3 lb. extra-lean ground beef</li>
+                      <li>1/4 cup seasoned dry bread crumbs</li>
+                      <li>1/2 cloves garlic, minced</li>
+                      <li>1/2 Tbsp. milk</li>
+                      <li>1/3 egg, beaten</li>
+                      <li>1/4 cup KRAFT Shredded Parmesan Cheese, divided</li>
+                      <li>1/4 lb. spaghetti, uncooked, broken in half</li>
+                      <li>1/3 jar (24 oz.) CLASSICO Marinara with Plum Tomatoes & Olive Oil Pasta Sauce</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="row">
+              <!-- Recipe Image -->
+              <div class="col-md-6">
+                  <br>
+                  <h5><b>Instructions:</b></h5>
+                  <ol>
+                      <li>Heat oven to 375ºF.</li>
+                      <li>Mix first 5 ingredients and 1/4 cup cheese just until blended; shape into 18 meatballs. 
+                        Place on rimmed baking sheet sprayed with cooking spray.</li>
+                      <li>Bake 15 min. or until done (160ºF). Meanwhile, cook spaghetti as directed on package, 
+                        omitting salt. About 5 min. before spaghetti and meatballs are done, cook sauce in large 
+                        saucepan on medium-low heat until heated through, stirring occasionally.</li>
+                      <li>Drain spaghetti; place on platter. Add meatballs to sauce; stir until evenly coated. 
+                        Spoon over spaghetti; top with remaining cheese.</li>
+                  </ol>
+                  <span>
+                      <h5>Cooking Time:</h5>
+                      <p>30 Min(s)    30 Min(s) Prep</p>
+  
+                      <h5>Price:</h5>
+                      <p>$12.99 per serving (2 Servings)</p>
+                  </span>
+                  
+              </div>
+  
+              <!-- Recipe Details -->
+              <div class="col-md-6 recipe-content" >
+  
+                  <div class="card" style="width: auto;">
+                      <div class="card-header">
+                          <h5 class="c-h5 nutritionChart__title">Spaghetti &amp; Meatballs</h5> 
+                          <p class="c-p3 nutritionChart__subTitle">With Marinara &amp; Parmesan Cheese</p>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <label>serving size</label> 
+                          <span class="float-end">2</span>
+                        </li>
+                        <li class="list-group-item">
+                          <label>calories</label> 
+                          <span class="float-end">430</span>
+                        </li>
+                        <li class="list-group-item">
+                          <label>carbohydrates</label> 
+                          <span class="float-end">27g</span>
+                        </li>
+                        <li class="list-group-item">
+                          <label>fat</label> 
+                          <span class="float-end">18g</span>
+                        </li>
+                        <li class="list-group-item">
+                          <label>net carbs</label> 
+                          <span class="float-end">27g</span>
+                        </li>
+                        <li class="list-group-item">
+                          <label>protein</label> 
+                          <span class="float-end">40g</span>
+                        </li>
+                      </ul>
+                    </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="col1">
+          <i class="fa-regular fa-copyright"></i>
+          <span  class="brand"> In A Box@2023 | All Reserved</span>
+        </div>
+        <div class="col2">
+          <ul class="footer-menu">
+            <li>
+              <a href="aboutUs.html">About us</a>
+            </li>
+            <li>
+              <a href="Contactus.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col3">
+          <ul class="media-icons">
+            <div>Follow us on</div>
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook fa-lg "></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter fa-lg "></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-instagram fa-lg "></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+

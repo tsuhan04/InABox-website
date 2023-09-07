@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Font CDn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </head>
+
+  <style>
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+    }
+    .home-page {
+        background-color: #eeebe3;
+        overflow: hidden;
+    }
+    .heading h1{
+        color: #3e2093;
+        font-size: 55px;
+        text-align: center;
+        margin-top: 35px;
+    }
+    .home-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 65px auto;
+    }
+    .home-content {
+        flex: 1;
+        width: 600px;
+        margin: 0px 25px;
+    }
+    .home-content h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+    .home-content p{
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 40px;
+        color: #666;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    @media screen and (max-width: 768px){
+        .heading h1{
+            font-size: 45px;
+            margin-top: 30px;
+        }
+        .home-page{
+            margin: 0px;
+        }
+        .home-container{
+            width: 100%;
+            flex-direction: column;
+            margin: 0px;
+            padding: 0px 40px;
+        }
+        .home-content{
+            width: 100%;
+            margin: 35px 5px;
+        }
+        .home-content h2{
+            font-size: 30px;
+        }
+        .home-content p{
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .home-img{
+            width: 100%;
+        }
+        .start-button{
+          margin-bottom: 20px;
+        }
+    }
+
+
+    
+</style>
+
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">In A Box</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                  Service and products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="recipe.html">Recipes Guides</a></li>
+                  <li><a class="dropdown-item" href="homeset.html">Bake at Home set</a></li>
+                  <li><a class="dropdown-item" href="ingredient.html">Ingredientss (dry/preserved)</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li class="nav-item dropend">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" >
+                      Other Items
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="meal.html">Meal planner</a></li>
+                      <li><a class="dropdown-item" href="nutritional.html">Nutritional information App</a></li>
+                      <li><a class="dropdown-item" href="weeklyRecipe.html">Weekly Recipes Selection</a></li>
+                      <li><a class="dropdown-item" href="giftBox.html">Gift Boxs</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="package.html">Packages</a>
+              </li>
+            </ul>
+
+
+            <span class="navbar-text">
+                <i class="fa-regular fa-user fa-lg" style="color: #3e2093;"></i>
+                <a
+                class="login btn btn-outline-dark logInBtn me-2"
+                type="button"
+                href="LogIn.html">Login</a>
+                <a
+                class="signup btn btn-outline-dark logInBtn"
+                type="button"
+                href="signUp.html">Sign up</a>
+            </span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- Body -->
+    <section class="home-page">
+      <div class="heading">
+          <h1>In A Box</h1>
+      </div>
+      <br>
+
+      <img src="https://i0.wp.com/thespoon.tech/wp-content/uploads/2020/03/Image-from-iOS-11.jpg?fit=1200%2C800&ssl=1" class="col-md-6 float-md-end mb-3 ms-md-3" alt="..." class="home-img">
+    
+      <div class="homepage-container">
+          <div class="home-content">
+              <h2>Welcome To Our Website</h2>
+              <h4><i>"Discover the Joy of Home-Cooked Meals"</i></h4><br>
+              <p>
+                At In a Box, we believe that great meals should be simple, 
+                delicious, and convenient. Our mission is to bring the joy 
+                of home-cooked meals to your doorstep, making it easier than 
+                ever to enjoy fresh, wholesome dishes with your loved ones.
+              </p>
+
+              <h4><i>"Get Started Today"</i></h4>
+              <br>
+              <p>
+                Ready to embark on your culinary journey? Explore our offerings, 
+                choose a package that suits your tastes, and let's bring the joy 
+                of home-cooked meals to your table.
+              </p>
+          </div>
+          <div class="text-center mb-5">
+            <a href="LogIn.html" class="btn btn-success buybutton" style="width: 30%;">Get Start</a>
+          </div>
+          
+
+          <div class="container mt-5">
+            <div class="row text-center">
+              <div class="col-sm-12">
+                <h2>Explore the Menu</h2>
+                <h5>Start with either a Meal Kit or Fresh, Prepared Meal Plan and then customize your weekly delivery</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-sm-6 col-md3 col-lg-3">
+                <div class="card">
+                  <img src="https://freshmealplan.com/cdn/shop/products/TraditionalSpaghettiandMeatballs.jpg?v=1634072657" alt="recipe" class="card-img-top">
+                  <div class="card-body pt-1 pb-1">
+                    Spaghetti & Meatballs
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md3 col-lg-3">
+                <div class="card">
+                  <img src="https://freshmealplan.com/cdn/shop/products/DSC01299.jpg?v=1634223219" alt="recipe" class="card-img-top">
+                  <div class="card-body pt-1 pb-1">
+                    Grilled BBQ Chicken
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md3 col-lg-3">
+                <div class="card">
+                  <img src="https://freshmealplan.com/cdn/shop/products/LeanandMeanBeefSliderswithBrownRice_8db884e6-20d4-4898-9493-19430599d0d2.jpg?v=1634577885" alt="recipe" class="card-img-top">
+                  <div class="card-body pt-1 pb-1">
+                    Beef Sliders
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md3 col-lg-3">
+                <div class="card">
+                  <img src="https://freshmealplan.com/cdn/shop/products/KetoThaiChicken_1.jpg?v=1634330192" alt="recipe" class="card-img-top">
+                  <div class="card-body pt-1 pb-1">
+                    Thai Chicken
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="text-center mb-5">
+            <a href="recipe.html" class="btn btn-success buybutton" style="width: 30%;">View More</a>
+          </div>
+      </div>
+    </section>
+
+    <!-- home footer -->
+
+    <footer class="footer" style="background-color: #eeebe3;">
+      <div class="footer-container">
+        <div class="col1">
+          <h6>Hello@INABOX.com</h6>
+                    <ul class="list-unstyled">
+                        <li><p>Get healthy recipe, tips,and more.</p></li>
+                    </ul>
+        </div>
+        <div class="col2">
+          <h6><u>Company</u></h6>
+                    <ul class="list-unstyled" >
+                        <li><a href="aboutUs.html" style="text-decoration: none;">About US</a></li>
+                        <li><a href="#" style="text-decoration: none;">How it Works</a></li>
+                    </ul>
+        </div>
+        <div class="col3">
+          <h6><u>Support</u></h6>
+              <ul class="list-unstyled">
+                  <li><a href="#" style="text-decoration: none;">FAQs</a></li>
+                  <li><a href="giftBox.html" style="text-decoration: none;">Buy A Gift Box</a></li>
+                  <li><a href="Contactus.html" style="text-decoration: none;">Contact Us</a></li>
+              </ul>
+        </div>
+      </div>
+
+    </footer>
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="col1">
+          <i class="fa-regular fa-copyright"></i>
+          <span  class="brand"> In A Box@2023 | All Reserved</span>
+        </div>
+        <div class="col2">
+          <ul class="footer-menu">
+            <li>
+              <a href="aboutUs.html">About us</a>
+            </li>
+            <li>
+              <a href="Contactus.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col3">
+          <ul class="media-icons">
+            <div>Follow us on</div>
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook fa-lg "></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter fa-lg "></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-instagram fa-lg "></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </footer>
+
+      </div>
+
+
+    
+  </body>
+</html>
